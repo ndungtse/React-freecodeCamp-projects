@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import './style.css';
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
 import Class from "./Class";
+import RandomQuotes from "./randomUser/RandomQuotes";
 
 const Calculator = () => {
   const [num, setNum] = useState('')
@@ -127,6 +128,7 @@ const App = () => {
         <Routes>
          <Route path="/" element={<Calculator />}></Route>
          <Route path="/class" element={<Class />}></Route>
+         <Route path="/randomuser" element={<RandomQuotes />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
